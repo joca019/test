@@ -1,0 +1,17 @@
+var maxStack = Number.POSITIVE_INFINITY;
+
+function ping(n) {   
+   for (var n=0; n < maxStack; n++){  
+    console.log('ping', n);
+    }  
+    return pong(n);    
+}
+
+function pong(n) {    
+    for (var n=0; n < maxStack; n++){  
+        console.log('pong', n);
+        }  
+        return ping(n);    
+}
+
+ping(0);
